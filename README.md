@@ -1,5 +1,6 @@
 # TashDrops
 Современный мужской стиль и новинки моды
+curl -fsSL https://x.ai/cli/install.sh | bash
 <!DOCTYPE html>
 <html lang="ru">
 <head>

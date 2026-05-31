@@ -5,12 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TashDrops — Мужской стиль 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat fixed; }
+    .card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card:hover { transform: translateY(-12px) scale(1.03); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4); }
   </style>
 </head>
-<body>
-  <h1>TashDrops</h1>
-  <p>Красивый сайт в процессе создания...</p>
+<body class="bg-zinc-950 text-zinc-100 overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="bg-black/95 backdrop-blur-lg border-b border-zinc-800 fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+      <div class="text-3xl font-bold tracking-tighter">TashDrops</div>
+      <div class="flex gap-10 text-sm font-medium">
+        <a href="#" class="hover:text-white">Главная</a>
+        <a href="#" class="hover:text-white">Новинки</a>
+        <a href="#" class="hover:text-white">Обзоры</a>
+        <a href="#" class="hover:text-white">Сравнения</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero h-screen flex items-center pt-20">
+    <div class="max-w-7xl mx-auto px-8 text-center">
+      <h1 class="text-7xl md:text-8xl font-bold leading-none mb-6 tracking-tighter text-white">
+        МУЖСКОЙ СТИЛЬ<br>2026
+      </h1>
+      <p class="text-2xl text-zinc-200 mb-12 max-w-xl mx-auto">
+        С подиумов Парижа, Милана и Токио — прямо в Ташкент
+      </p>
+      <a href="#" class="inline-flex items-center gap-4 px-12 py-6 bg-white text-black rounded-3xl text-2xl font-medium hover:bg-amber-300 transition">
+        Смотреть новинки <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Trending -->
+  <section class="max-w-7xl mx-auto px-8 py-20">
+    <h2 class="text-5xl font-bold mb-12 text-center">Сейчас в тренде</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="card bg-zinc-900 rounded-3xl overflow-hidden">
+        <img src="https://picsum.photos/id/1015/800/1000" class="w-full h-96 object-cover">
+        <div class="p-6">
+          <p class="text-amber-400">Runway • Paris</p>
+          <p class="font-semibold text-xl mt-2">Hermes Barsetka 2026</p>
+          <p class="text-emerald-400 mt-4">от 299 000 сум</p>
+        </div>
+      </div>
+      <!-- Добавь ещё карточки по аналогии -->
+    </div>
+  </section>
+
 </body>
 </html>
